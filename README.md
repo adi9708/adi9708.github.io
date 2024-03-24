@@ -2,8 +2,7 @@
 <p align="center">
   Hello World, this is my personal portfolio website, turning caffeine into code since 2018 :)
 </p>
-![demo](https://raw.githubusercontent.com/adi9708/v4/main/src/images/demo.png)
-<!-- 
+![alt text](/src/images/demo.png "Portfolio snapshot")
 
 ## 🛠 Installation & Set Up
 
