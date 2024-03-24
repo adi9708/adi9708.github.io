@@ -2,7 +2,7 @@
 <p align="center">
   Hello World, this is my personal portfolio website, turning caffeine into code since 2018 :)
 </p>
-![alt text](/src/images/demo.png "Portfolio snapshot")
+![alt text](/v4/src/images/demo.png, "Portfolio snapshot")
 
 ## 🛠 Installation & Set Up
 
