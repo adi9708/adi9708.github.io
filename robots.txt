@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://adi9708.github.io/sitemap-index.xml
+Host: https://adi9708.github.io
