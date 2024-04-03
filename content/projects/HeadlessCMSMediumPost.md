@@ -1,15 +1,14 @@
 ---
 date: '2019-11-12'
-title: 'Building a Headless Mobile App CMS From Scratch'
+title: 'Cardiovascular Disease Classification'
 github: ''
-external: 'https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9'
+external: 'https://colab.research.google.com/drive/13aoFQu-znJSJPFlGwVHiA6a5cwuDNJKT'
 tech:
-  - Node
-  - Express
-  - Firebase
-  - Vue
+  - Sci-kit Learn
+  - Logistic Regression
+  - SVM
+  - KNN
 company: 'Upstatement'
 showInProjects: true
 ---
 
-Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement

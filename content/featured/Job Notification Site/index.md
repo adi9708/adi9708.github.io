@@ -2,14 +2,13 @@
 date: '2'
 title: 'Job Magnet'
 cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
+github: 'https://github.com/adi9708/job-notification-system'
 # external: 'https://spotify-profile.herokuapp.com/'
 tech:
   - React
-  - MongoDB
-  - Express
+  - Java Springboot
+  - Producer Consumer
   - Node JS
-  - Kafka
   - EC2
 ---
 
