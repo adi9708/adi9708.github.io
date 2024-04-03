@@ -17,12 +17,7 @@ const StyledPostHeader = styled.header`
 `;
 const StyledPostContent = styled.div`
   margin-bottom: 100px;
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     margin: 2em 0 1em;
   }
 
@@ -51,13 +46,25 @@ const StyledPostContent = styled.div`
 `;
 
 const PostTemplate = ({ data, location }) => {
+  // Check if markdownRemark exists
+  if (!data || !data.markdownRemark) {
+    return (
+      <Layout location={location}>
+        <StyledPostContainer>
+          <h1>Post not found</h1>
+          <p>Sorry, but the post you were trying to view does not exist.</p>
+          <Link to="/pensieve">Go back to the blog</Link>
+        </StyledPostContainer>
+      </Layout>
+    );
+  }
+
   const { frontmatter, html } = data.markdownRemark;
   const { title, date, tags } = frontmatter;
 
   return (
     <Layout location={location}>
       <Helmet title={title} />
-
       <StyledPostContainer>
         <span className="breadcrumb">
           <span className="arrow">&larr;</span>
@@ -75,13 +82,9 @@ const PostTemplate = ({ data, location }) => {
               })}
             </time>
             <span>&nbsp;&mdash;&nbsp;</span>
-            {tags &&
-              tags.length > 0 &&
-              tags.map((tag, i) => (
-                <Link key={i} to={`/pensieve/tags/${kebabCase(tag)}/`} className="tag">
-                  #{tag}
-                </Link>
-              ))}
+            {tags && tags.length > 0 && tags.map((tag, i) => (
+              <Link key={i} to={`/pensieve/tags/${kebabCase(tag)}/`} className="tag">#{tag}</Link>
+            ))}
           </p>
         </StyledPostHeader>
 
